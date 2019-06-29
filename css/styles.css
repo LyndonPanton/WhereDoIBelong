@@ -52,7 +52,49 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 2vh;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
 
+main {
+	padding-top: 10vh;
+}
 
+.form-input {
+	border: none;
+	border-bottom: 1px black solid;
+	background-color: transparent;
+	text-align: center;
+	font-size: 1em;
+}
+
+.form-input:focus {
+	border-bottom-color: yellow;
+}
+
+.display {
+	margin: 2vh 15vw;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 1.5vh 0;
+}
+
+#array {
+	border-color: red;
+	background-color: cyan;
+}
+
+#number {
+	border-color: green;
+	background-color: magenta;
+}
+
+#position {
+	border-color: blue;
+	background-color: yellow;
+}
 
 /* FOOTER */

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* havana (@scheme color) */
 
+/* GENERAL */
 body, html {
 	margin: 0;
 	width: 100%;
@@ -13,3 +14,45 @@ body, html {
 	font-size: 16px;
 	color: black;
 }
+
+
+/* HEADER */
+h1 {
+	margin: 0;
+	padding: 1vh 0;
+}
+
+header {
+	background-color: #7ACFD4;
+}
+
+.fas {
+	transform: scale(2, 1);
+	font-size: 1.2em;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+#task {
+	position: absolute;
+	padding: 0.5vh 10vw;
+	background-color: #F0D29C;
+}
+
+#task-head {
+	text-decoration: underline;
+}
+
+
+
+/* MAIN */
+
+
+
+/* FOOTER */

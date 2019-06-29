@@ -6,13 +6,13 @@
 > 3. Choose the _open with_ option
 > 4. Open the project in your desired browser
 
-## How To Use
+## How To Use
 > 1. Enter space separated numeric values into the first input field
 > 2. Enter a numeric value into the second input field
 > 3. Press the _Evaluate_ button
 > 4. The original array, number to insert and position it will be inserted into will be displayed
 
-## Requirements
+## Requirements
 > 1. This project requires a browser to run
 > 2. The browser must have JavaScript available and enabled
 

@@ -3,9 +3,15 @@
 window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function display(values) {
+		document.getElementById("array-value").textContent = "[" + values[0].split(" ").join(", ") + "]";
+		document.getElementById("number-value").textContent = values[1];
+		document.getElementById("position-value").textContent = values[2];
+	}
+
 	function place(original, addition) {
 		if (!(original.split("").length) || original.trim() === "") {
-			return "Enter numbers";
+			return display(["Enter numbers", "???", "???"]);
 		} else {
 			let array = original.split(" ");
 
@@ -19,7 +25,7 @@ window.onload = function(event) {
 				}
 			});
 
-			return newArray.indexOf(addition);
+			return display([original, addition, newArray.indexOf(addition)]);
 		}
 	}
 

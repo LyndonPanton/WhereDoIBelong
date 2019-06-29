@@ -28,6 +28,7 @@ header {
 }
 
 .fas {
+	margin-bottom: 1vh;
 	transform: scale(2, 1);
 	font-size: 1.2em;
 }

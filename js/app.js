@@ -3,6 +3,26 @@
 window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function place(original, addition) {
+		if (!(original.split("").length) || original.trim() === "") {
+			return "Enter numbers";
+		} else {
+			let array = original.split(" ");
+
+			array.push(addition);
+
+			let newArray = array.sort(function(a, b) {
+				if (a > b) {
+					return 1;
+				} else {
+					return -1;
+				}
+			});
+
+			return newArray.indexOf(addition);
+		}
+	}
+
 	function toggle(chevron) {
 		let task = document.getElementById("task");
 
@@ -35,5 +55,7 @@ window.onload = function(event) {
 	let form = document.getElementById("form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
+
+		place(this.children[0].value, this.children[1].value);
 	});
 };

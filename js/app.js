@@ -14,6 +14,9 @@ window.onload = function(event) {
 			return display(["Enter numbers", "???", "???"]);
 		} else {
 			let array = original.split(" ");
+			array.forEach(function(number, index) {
+				array[index] = Number(array[index]);
+			});
 
 			array.push(addition);
 
